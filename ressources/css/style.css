@@ -1,0 +1,16 @@
+@font-face{
+    font-family: 'arkitech';
+    src: url("../fonts/arkitech/Arkitech\ Medium\ Stencil.ttf") format("truetype");
+}
+@font-face{
+    font-family: 'core';
+    src: url("../fonts/core/Core.ttf") format("truetype");
+}
+
+body{
+    font-family: 'core', sans-serif;
+    background-image: url(../images/bright_squares.png);
+}
+h1, h2, h3, h4{
+    font-family: 'arkitech', sans-serif;
+}
