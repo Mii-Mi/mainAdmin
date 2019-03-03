@@ -1,3 +1,6 @@
+/* GLOBAL
+################################# */
+
 @font-face{
     font-family: 'arkitech';
     src: url("../fonts/arkitech/Arkitech\ Medium\ Stencil.ttf") format("truetype");
@@ -9,8 +12,81 @@
 
 body{
     font-family: 'core', sans-serif;
+    font-size: 1.6em;
+    letter-spacing: 1.2px;
     background-image: url(../images/bright_squares.png);
 }
 h1, h2, h3, h4{
     font-family: 'arkitech', sans-serif;
+    letter-spacing: normal;
+    text-align: center;
+}
+h1{
+    font-size: 1.3em;
+}
+h2{
+    font-size: 1em;
+}
+.button{
+    height: 35px;
+    padding-top: 7px; /*permet le centrage vertical*/
+    text-align: center;
+    color: #000;
+    background: #444;
+    background: linear-gradient( #555, #2C2C2C);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+                0 -1px 0 rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.button:hover, .sButton:hover{
+    color: #222;
+    background: #555;
+    background: linear-gradient(#777, #333);
+}
+.button:active, .sButton:active{
+    color: #000;
+    background: #444;
+    background: linear-gradient(#555, #2c2c2c);
+    box-shadow: 1px 1px 10px black inset,
+                0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.aButton{
+    text-decoration: none;
+}
+.sButton{
+    font-family: 'core', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 1.2px;
+    color: #000;
+    background: #444;
+    background: linear-gradient( #555, #2C2C2C);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+                0 -1px 0 rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+/* INDEX
+################################# */
+
+.accesAdmin{
+    width: 100%;
+}
+
+/* LOGIN
+################################# */
+
+.contLog{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.formLog{
+    max-width: 700px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    padding: 30px;
 }
