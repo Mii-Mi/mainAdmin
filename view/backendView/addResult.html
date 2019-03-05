@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ajouter article</title>
+    <title>Nouveau résultat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../../ressources/css/style.css">
 </head>
@@ -13,16 +13,18 @@
     </header>
     <section>
         <form method="POST" action="dbMiss.html" class="formRes">
-            <p><label for="status">Statut</label> :
+            <p><label for="status">Statut</label> : 
                 <select name="status" id="status">
                     <option>Actif</option>
                     <option>Inactif</option>
                 </select>
             </p>
-            <p><label for="date">Date</label> : <input type="date" name="date" id="date" required /></p>
-            <p><label for="title">Titre</label> : <input type="text" name="title" id="title" required /></p>
-            <p><label for="com">Contenu</label><br />
-                <textarea name="com" id="com" rows="6" cols="100" required></textarea></p>
+            <p><label for="date">Date</label> : <input type="date" name="date" id="date" required/></p>
+            <p><label for="opponent">Adversaire</label> : <input type="text" name="opponent" id="opponent" required /></p>
+            <p><label for="place">Lieu</label> : <input type="text" name="place" id="place" /></p>
+            <p><label for="score">Score</label> : <input type="text" name="score" id="score" /></p>
+            <p><label for="com">Commentaire</label><br />
+            <textarea name="com" id="com" rows="6" cols="100"></textarea></p>
             <p><input type="submit" class="sButton" value="Envoyer" /></p>
         </form>
     </section>

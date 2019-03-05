@@ -86,6 +86,121 @@ form label{
     display: inline-block;
     width: 200px;
 }
+/* general tables */
+table, th, td{
+    border: 1px solid black;
+}
+.tables{
+    width: 90%;
+    box-shadow: 0 0 5px black;
+}
+.tables td{
+    text-align: center;
+}
+.contTab{
+    display: flex;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: #444 4px solid;
+}
+.contTabEl{
+    height: 100%;
+}
+.contTableBtn{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    width: 10%;
+}
+.contTableBtn .button {
+    min-width: 100px;
+    padding-bottom: 0;
+    margin: 5px;
+    margin-left: 15px;
+}
+.separate p{
+    background-color: #444;
+    width: 100%;
+}
+
+/*colored button : red */
+.delButton {
+    color: #222;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(rgb(248, 71, 71), rgb(170, 1, 1));
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+        0 -1px 0 rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.delButton:hover{
+    color: #222;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(rgb(253, 139, 139), rgb(255, 0, 0));
+}
+
+.delButton:active{
+    color: #000;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(rgb(248, 71, 71), rgb(170, 1, 1));
+    box-shadow: 1px 1px 10px black inset,
+        0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/*colored button : yellow*/
+.editButton {
+    color: #222;
+    background: rgb(255, 255, 0);
+    background: linear-gradient(rgb(255, 255, 134), rgb(165, 165, 0));
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+        0 -1px 0 rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.editButton:hover {
+    color: #222;
+    background: rgb(255, 255, 0);
+    background: linear-gradient(rgb(255, 255, 187), rgb(255, 255, 0));
+}
+
+.editButton:active {
+    color: #000;
+    background: rgb(255, 255, 0);
+    background: linear-gradient(rgb(255, 255, 134), rgb(119, 119, 0));
+    box-shadow: 1px 1px 10px black inset,
+        0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* colored button : green*/
+.activeButton {
+    color: #222;
+    background: rgb(0, 255, 0);
+    background: linear-gradient(rgb(127, 255, 127), rgb(0, 170, 0));
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+        0 -1px 0 rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.activeButton:hover {
+    color: #222;
+    background: rgb(0, 255, 0);
+    background: linear-gradient(rgb(161, 255, 161), rgb(0, 255, 0));
+}
+
+.activeButton:active {
+    color: #000;
+    background: rgb(255, 255, 0);
+    background: linear-gradient(rgb(88, 255, 88), rgb(0, 168, 0));
+    box-shadow: 1px 1px 10px black inset,
+        0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.contTableBtn .button a{
+    text-decoration: none;
+    color: #000;
+}
 
 /*  NAVBAR
 ################################# */
@@ -120,6 +235,7 @@ div.content{
     /*height: 1000px;*/
 }
 
+
 /* INDEX
 ################################# */
 
@@ -147,6 +263,56 @@ div.content{
     padding: 30px;
 }
 
+/* RESULTS $ ADD RESULT
+################################# */
+
+.formRes{
+    margin-top: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formRes input, .formRes select{
+    min-width: 15em;
+    min-height: 2.5em;
+}
+.formRes textarea{
+    max-width: 95%;
+    border-radius: 5px;
+}
+.formRes .sButton{
+    min-width: initial;
+    min-height: initial;
+}
+
+/* DBMISS
+################################# */
+
+p .nabilla{
+    border-radius: 50%;
+    max-width: 500px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1240px){
+    .contTab{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contTabEl{
+        width: 100%;
+    }
+    .contTableBtn{
+        flex-direction: row;
+    }
+    .contTableBtn .button {
+        padding-bottom: 2px;
+    }
+}
 @media screen and (max-width: 700px){
 
     .sidebar{
@@ -160,6 +326,7 @@ div.content{
     div.content{
         margin-left: 0;
     }
+    
 }
 
 @media screen and (max-width: 400px){
@@ -171,17 +338,8 @@ div.content{
     h1{
         font-size: 1.1em;
     }
-}
-
-/* MAIN RESULTS
-################################# */
-
-.results{
-    width: 60%;
-}
-.results td{
-    text-align: center;
-}
-.contRes{
-    display: flex;
+    .contTableBtn {
+        flex-direction: column;
+        width: 100%;
+    }
 }
