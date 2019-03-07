@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modifier membre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../ressources/css/style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Modifier un membre</h1>
+    </header>
+    <section>
+        <form method="POST" action="dbMiss.html" class="formRes">
+            <p><label for="patName">Nom</label> : <input type="text" name="patName" id="patName" value="Lavallée"/></p>
+            <p><label for="firstName">Prénom</label> : <input type="text" name="firstName" id="firstName" value="Yvon" /></p>
+            <p><label for="age">Âge</label> : <input type="number" name="age" id="age" value="49" /></p>
+            <p><label for="category">Catégorie</label>
+            <select name="category" id="category">
+                <option>Baby</option>
+                <option>Pupille</option>
+                <option>Poussin</option>
+                <option>Benjamin</option>
+                <option>Minime</option>
+                <option>Cadet</option>
+                <option>Sénior</option>
+            </select></p>
+            <p><label for="inscDate">Date d'inscription</label><input type="date" name="inscDate" id="inscDate" /></p>
+            <p class="radio">État des cotisations :<br /> 
+                <input type="radio" name="statusCotis" value="ok" id="ok" checked/><label for="ok">À jour</label><br />
+                <input type="radio" name="statusCotis" value="due" id="due" /><label for="due">À régler</label>
+            </p>
+            <p><input type="submit" class="sButton" value="Envoyer" /></p>
+        </form>
+    </section>
+</body>
+</html>

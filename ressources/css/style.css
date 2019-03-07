@@ -288,6 +288,49 @@ div.content{
     min-width: initial;
     min-height: initial;
 }
+.radio input{
+    min-width: auto;
+    line-height: 12px;
+    vertical-align: middle;
+}
+
+/* STATISTICS
+################################# */
+
+.contStatCol{   /* main container */
+    display: flex;
+    flex-direction: column;
+}
+.cont1StatRow1{ /* line of 4 rectangles top */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    
+}
+.contInfoCol{   /* these rect. */
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+.contInfoCol p{
+    margin: 0 10px;
+    text-align: center;
+}
+.contInfoRow{
+    display: flex;
+    justify-content: space-between;
+}
+.cont1StatRow2{
+    display: flex;
+}
+.statLines{
+    display: flex;
+    flex-direction: column;
+}
 
 /* DBMISS
 ################################# */
@@ -295,8 +338,13 @@ div.content{
 p .nabilla{
     border-radius: 50%;
     max-width: 500px;
-    margin-top: 100px;
 }
+.contLog .aButton{
+    margin: 10px;
+}
+
+/* RESPONSIVE
+################################# */
 
 @media screen and (max-width: 1240px){
     .contTab{
@@ -329,6 +377,12 @@ p .nabilla{
     
 }
 
+@media screen and (max-width: 530px){
+    .nabilla{
+            max-width: 250px !important;
+        }
+}
+
 @media screen and (max-width: 400px){
 
     .sidebar a{
@@ -342,4 +396,5 @@ p .nabilla{
         flex-direction: column;
         width: 100%;
     }
+    
 }
