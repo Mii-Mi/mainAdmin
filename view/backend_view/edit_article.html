@@ -3,21 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Modifier un résultat</title>
+    <title>modifier article</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../../ressources/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Modifier le résultat</h1>
+        <h1>Modifier un article</h1>
     </header>
     <section>
-        <form method="POST" action="dbMiss.html" class="formRes">
-            <p><label for="date">Date</label> : <input type="date" name="date" id="date"  value="30/02/2019"/></p>
-            <p><label for="opponent">Adversaire</label> : <input type="text" name="opponent" id="opponent" value="Montcuq"  /></p>
-            <p><label for="place">Lieu</label> : <input type="text" name="place" id="place" value="Montcuq"  /></p>
-            <p><label for="score">Score</label> : <input type="text" name="score" id="score" value="4 - 1"  /></p>
-            <p><label for="com">Commentaire</label><br />
+        <form method="POST" action="db_miss.html" class="formRes">
+            <p><label for="date">Date</label> : <input type="date" name="date" id="date"  /></p>
+            <p><label for="title">Titre</label> : <input type="text" name="title" id="title" value="Pot de départ à Dédé"  /></p>
+            <p><label for="com">Contenu</label><br />
                 <textarea name="com" id="com" rows="6" cols="100">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, in dolorem? Commodi architecto nam quia magni iure ex veniam, sequi minus adipisci! Quae nam consectetur mollitia veniam quod aspernatur quos.</textarea></p>
             <p><input type="submit" class="sButton" value="Envoyer" /></p>
         </form>
